@@ -1,3 +1,29 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.title_bar {
+  border: 10px solid black;
+  font-size: 30px;
+  padding: 20px;
+}
+
+.new_post_link {
+  margin-left: 50px;
+}
+
+.post_listing {
+  margin-left: 40px;
+  border: 1px solid black;
+  font-size: 25px;
+}
+
+.title {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.text {
+  padding-left: 30px;
+  padding-right: 30px;
+}

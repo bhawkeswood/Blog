@@ -1,8 +1,11 @@
-<h1>Currently Available Posts</h1>
+<div class="title_bar">
+	<h1>Currently Available Posts</h1>
+	<div class='new_post_link'>
+		<%= link_to 'Make a New Post', new_post_path %>
+	</div>
+</div>
 
-<%= link_to 'Make a New Post', new_post_path %>
-
-<table>
+<table class="post_listing">
 	<tr>
 		<th>Title</th>
 		<th>Text</th>
@@ -10,8 +13,8 @@
 
 	<% @posts.each do |post| %>
 	  <tr>
-		<td><%= post.title %></td>
-		<td><%= post.text %></td>
+			<td class="title"><%= link_to post.title, post_path(post) %></td>
+			<td class="text"><%= post.text %></td>
 	  </tr>
 	<% end %>
 </table>
