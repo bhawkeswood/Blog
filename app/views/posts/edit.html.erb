@@ -1,6 +1,6 @@
 <h1>Editing post</h1>
 
-<%= form_for :post, url: post_path(@post.id) },
+<%= form_for :post, url: post_path(@post.id),
 method: :patch do |f| %>
 	<% if @post.errors.any? %>
 	<div id="errorExplanation">
